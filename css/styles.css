@@ -1,0 +1,40 @@
+body {
+	font-family: 'Roboto', sans-serif; /* changes font */
+}
+#showcase > h1, 
+#showcase > h2, 
+#contact > h2, 
+#contact > h3 { 
+	text-shadow: 2px 2px 2px #000; /* adds shadow to different section headers*/
+}
+#showcase { /* adds image to background and covers screen */
+	background-image: url('../images/com_bike_mobile.jpg');
+	background-size: cover;
+	background-position: center;
+}
+#bintuwronged {
+  background-image: url("../images/BintuGateShot.png");
+  background-size: cover;   
+  background-position: center;    
+  background-repeat: no-repeat;    
+  background-attachment: fixed;   
+  color: white;                  
+  position: relative;
+  z-index: 1;
+}
+
+.video {
+	width: 400px;
+	height: 225px;
+}
+
+#contact {
+	background-image: url('../images/com_ocean_mobile.jpg'); /* adds image to background and covers screen */
+	background-size: cover;
+	background-position: center;
+}
+#cv span > i:hover,
+footer span > i:hover { /* adds colour transition */
+	color: #0d2708;
+	transition: 0.3s
+}
