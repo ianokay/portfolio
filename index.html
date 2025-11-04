@@ -48,7 +48,7 @@
 		</header>
 		<section id="showcase" class="min-vh-100 d-flex flex-column align-items-center justify-content-center text-center"> <!--Showcase section for displaying title and background. min viewport height is 100, and content and text is centered-->
 				<h1 class="text-light fs-2 fst-italic">IAN O'KEEFE</h1> <!--Italicizes text and sets size-->
-				<h2 class="text-light fs-1 fw-bold px-4 pb-3">MY PORTFLIO WEBSITE TEST</h2> <!--bolds text and sets size-->
+				<h2 class="text-light fs-1 fw-bold px-4 pb-3">MY PORTFLIO WEBSITE</h2> <!--bolds text and sets size-->
 				<a href="#skills" class="btn btn-lg btn-success">LEARN MORE</a> <!--Button that send the user to the skills section-->
 		</section>
 		<section id="skills"  class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center px-3" style="min-height: 100vh;"> <!--Skills section. This displays three icons with a circle background, as well as some text. This will change from a column to a row depending on if it is in mobile ro not.-->
@@ -296,35 +296,6 @@
 					</div>
 				</div>
 			</div>
-		</section>
-		<section id="contact" class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center min-vh-100"> <!--Contact section. This contains input fields and a comment section with a button below. This stacks in a row when in mobile.-->
-			<h2 class="display-2 pt-4 fw-semibold text-light">CONTACT ME</h2> <!--semibolds font-->
-			<h3 class="display-6 pt- fw-normal text-light px-3">Interested in reaching out to me? Please enter in your information and message below.</h3>
-			<form id="contacting" class="container-fluid mx-1" action="https://144.compsci.cc/submit-form/"> <!--Action on submission of form. Creates a container for the content which fits the screen-->
-				<div class="d-flex px-1 px-md-4 px-lg-5 row row-cols-1 row-cols-md-2 pt-5"> <!--horizontal padding for each viewing size, different columns for each size-->
-					<div class="col"> <!--Area for inputs-->
-						<div class="form-floating my-3"> <!--vertical margin-->
-							<input name="Name" type="text" class="form-control" id="your-name" placeholder="Your Name" required> <!--name form-->
-							<label for="your-name">Your Name</label>
-						</div>
-						<div class="form-floating mb-3"> <!--vertical margin-->
-							<input name="EmailAddress" type="email" class="form-control" id="your-email" placeholder="Your Email" required> <!--email form-->
-							<label for="your-email">Your Email</label>
-						</div>
-						<div class="form-floating mb-3"> <!--vertical margin-->
-							<input name="PhoneNumber" type="tel" class="form-control" id="your-phone" placeholder="Your Phone" required> <!--phone form-->
-							<label for="your-phone">Your Phone</label>
-						</div>						
-					</div>
-					<div class="col form-floating mb-3 mt-0 mt-md-3"> <!--margin bottom and top for different sizes-->
-						<textarea class="form-control h-100" placeholder="Leave a comment here" id="floatingTextarea" required></textarea> <!--text area for with height of 100-->
-						<label class="ms-3" for="floatingTextarea">Comments</label> <!--adds starting margin-->
-					</div>
-				</div>
-				<div>
-					<button type="submit" class="btn btn-lg btn-success" form="contacting">Send Message</button> <!--button for form in contact section-->
-				</div>
-			</form>
 		</section>
 		
 		<footer class="bg-light container-fluid"> <!--create a container for the content which fits the screen and sets background colour--> 
