@@ -8,19 +8,66 @@ body {
 	text-shadow: 2px 2px 2px #000; /* adds shadow to different section headers*/
 }
 #showcase { /* adds image to background and covers screen */
-	background-image: url('../images/com_bike_mobile.jpg');
+	background-image: 
+		linear-gradient(to top, white, rgba(255,255,255,0) 350px),
+		url('../images/com_bike_mobile.jpg');
 	background-size: cover;
 	background-position: center;
 }
+
+#portfolio {
+	background-image: 
+		linear-gradient(to bottom, white, rgba(255,255,255,0) 150px),
+		url('../images/naturebackground.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	isolation: isolate;
+}
+
+#portfolio::after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	inset: 0;
+	background: rgba(255,255,255,0.8);
+}
+
 #bintuwronged {
-  background-image: url("../images/BintuGateShot.png");
-  background-size: cover;   
-  background-position: center;    
-  background-repeat: no-repeat;    
-  background-attachment: fixed;   
-  color: white;                  
-  position: relative;
-  z-index: 1;
+	background-image: url("../images/BintuGateShot.png");
+    background-size: cover;   
+    background-position: center;    
+    background-repeat: no-repeat;    
+    background-attachment: fixed;   
+    color: white;                  
+    position: relative;
+    z-index: 1;
+}
+
+.bintu-list {
+	list-style-type: none;
+}
+
+.timeline-card {
+	background: white;
+	border-radius: 18px;
+	padding: 2.5rem;
+	margin: 2rem auto;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+	max-width: 900px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-card:hover {
+	transform: translateY(-0.6px);
+	box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+}
+
+
+.timeline-img {
+	max-width: 220px;
+	margin: 0 auto;
+	display: block;
 }
 
 .video {

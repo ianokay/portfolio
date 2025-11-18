@@ -12,9 +12,8 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css"> <!--link to css-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!--Link to bootstrap-->
 	</head>
-	<body data-bs-spy="scroll" data-bs-target="#navbar-example"> <!--scrollable container-->
-	
-		<header class="fixed-top text-center p-lg"> <!--header for assignment-->
+	<body data-bs-spy="scroll" data-bs-target="#navbarNav"> <!--scrollable container-->
+		<header class="fixed-top text-center p-lg shadow"> <!--header for assignment-->
 			<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"> <!--sets dark theme to navbar and adds drop menu-->
 				<div class="container-fluid"> <!--create a container for the content which fits the screen-->
 					<a class="navbar-brand text-success-emphasis fw-bold" href="#top">IAN O'KEEFE</a> <!--adds name and colour-->
@@ -41,11 +40,11 @@
 						</ul>
 					</div>
 				</div>
-			</nav>		
+			</nav>
 		</header>
 		<section id="showcase" class="min-vh-100 d-flex flex-column align-items-center justify-content-center text-center"> <!--Showcase section for displaying title and background. min viewport height is 100, and content and text is centered-->
 				<h1 class="text-light fs-2 fst-italic">IAN O'KEEFE</h1> <!--Italicizes text and sets size-->
-				<h2 class="text-light fs-1 fw-bold px-4 pb-3">MY PORTFLIO WEBSITE</h2> <!--bolds text and sets size-->
+				<h2 class="text-light fs-1 fw-bold px-4 pb-3">PORTFOLIO</h2> <!--bold text and sets size-->
 				<a href="#skills" class="btn btn-lg btn-success">LEARN MORE</a> <!--Button that send the user to the skills section-->
 		</section>
 		<section id="skills"  class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center px-3" style="min-height: 100vh;"> <!--Skills section. This displays three icons with a circle background, as well as some text. This will change from a column to a row depending on if it is in mobile ro not.-->
@@ -70,7 +69,7 @@
 								<i class="fas fa-laptop-code fa-stack-1x fa-inverse"></i>
 							</span>
 							<h3 class="pt-3">PROGRAMMING</h3>
-							<p class="text-start g-2">I have spent time with html, css, JavaScript, and React.js to create responsive websites, and C# to create videogames.</p>
+							<p class="text-start g-2">I have spent time with html, css, JavaScript, and React.js to create responsive websites, and C# to create videogames. This website has flexible formatting to ensure it works on different screen sizes.</p>
 						</div>
 					</div>
 					<div class="col-sm-4 gx-4 pt-4"> <!--adds gutters and padding to top-->
@@ -87,30 +86,39 @@
 			</div>
 		</section>
 		<section id="portfolio" class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center px-3 bg-light" style="min-height: 100vh;"> <!--Portfolio section. This displays 6 boxes containing an image and text which change in layout depending on viewport size.-->
-			<h2 class="display-2 pt-4 pb-5 fw-semibold">PORTFOLIO</h2> <!--semibolds text adds top padding-->
+			<h2 class="display-2 pt-5 pb-5 fw-semibold">PORTFOLIO</h2> <!--semibolds text adds top padding-->
 			<h3 class="display-6 pt-5 fw-normal">Some smaller projects I made while in the IMD program at Camosun.</h3>
-			<div class="container-fluid"> <!--create a container for the content which fits the screen-->
+			<div class="container-fluid pb-5"> <!--create a container for the content which fits the screen-->
 				<div class="row g-3 pt-5 row-cols-1 row-cols-md-3 row-cols-lg-4 justify-content-center"> <!--Div containing all the images and title for the portfolio section-->
 					<div class="col">
-						<div class="card h-100"> <!--makes card and sets height to 100-->	
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->	
 								<a href="images/YonniRedesignFinal.pdf" target="_blank"><img src="images/yonniredesignscreenshot.png" class="img-fluid" alt="Redesigned Website"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->	
 							<div class="card-body">	
 								<h3 class="card-title">Website Redesign Project</h3> 
-								<p class="card-text">Project where I redesigned the UI for the Yonni's Doughnuts Website.</p>
+								<p class="card-text">Click image to see my project where I redesigned the UI for the Yonni's Doughnuts Website.</p>
 							</div>
 						</div>
 					</div>
 					<div class="col">
-						<div class="card h-100"> <!--makes card and sets height to 100-->	
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->	
 								<a href="images/FigurineModel.jpg" target="_blank"><img src="images/FigurineModel.jpg" class="img-fluid" alt="Figurine Model"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->	
 							<div class="card-body">	
 								<h3 class="card-title">Figurine Model Project</h3> 
 								<p class="card-text">Designed, Modeled and textured a figurine in Maya.</p>
 							</div>
 						</div>
-					</div>					
+					</div>
 					<div class="col">
-						<div class="card h-100"> <!--makes card and sets height to 100-->
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->	
+								<a href="https://www.youtube.com/watch?v=_PFJVFQr3Os" target="_blank"><img src="images/chatbotshot.png" class="img-fluid" alt="Figurine Model"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->	
+							<div class="card-body">	
+								<h3 class="card-title">Chatbot Project</h3> 
+								<p class="card-text">Click image to see a demo where I used an OpenAI API to allow the user to talk to a chatbot. I also used Spline, a 3D design software to add animations and other things that react to the users actions.</p>
+							</div>
+						</div>
+					</div>			
+					<div class="col">
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->
 								<a href="images\IkeaChairRender.jpg" target="_blank"><img src="images\IkeaChairRender.jpg" class="img-fluid" alt="Chair Model"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->
 							<div class="card-body">
 								<h3 class="card-title">Recreating objects from photos in Maya</h3>
@@ -119,7 +127,7 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="card h-100"> <!--makes card and sets height to 100-->
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->
 								<a href="images/Final_Project.pdf" target="_blank"><img src="images/com_character_design.jpg" class="img-fluid" alt="Character Design"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->
 							<div class="card-body">
 								<h3 class="card-title">Character Design & Storytelling</h3>
@@ -127,12 +135,19 @@
 							</div>
 						</div>
 					</div>
+					<div class="col">
+						<div class="card shadow h-100"> <!--makes card and sets height to 100-->
+								<a href="images/NimbusSansPoster.pdf" target="_blank"><img src="images/nimpostershot.png" class="img-fluid" alt="Character Design"></a> <!--Image taken from the image folder to be displayed in a box with images that links to other page-->
+							<div class="card-body">
+								<h3 class="card-title">Font Poster</h3>
+								<p class="card-text">Click image to see the process behind my poster for the Nimbus Sans font.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section id="bintuwronged" class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center px-3"> <!--Portfolio section. This displays 6 boxes containing an image and text which change in layout depending on viewport size.-->
-			<!-- <h2 class="display-2 pt-4 fw-semibold">BintuWronged</h2>
-			<h3 class="display-6 pt-5 fw-normal">My Capstone Project from Camosun.</h3> -->
+		<section id="bintuwronged" class="d-flex shadow-lg justify-content-center align-items-center pt-5 pb-5 text-center px-3"> <!--Portfolio section. This displays 6 boxes containing an image and text which change in layout depending on viewport size.-->
 			<div class="container-fluid"> <!--create a container for the content which fits the screen-->
 				<div class="row g-3 pt-5 row-cols-1 row-cols-md-3 row-cols-lg-3 justify-content-center"> <!--Div containing all the images and title for the portfolio section-->
 					<div class="row">
@@ -148,18 +163,24 @@
 						</div>
 					</div>
 				</div>
-				<h3 class="display-16 pt-5 fw-normal">BintuWronged is a retro 3D platformer game made by me and two other classmates for a capstone project.</h3>
-				<h3 class="display-16 pt-2 fw-normal">For this project, I created all aspects of the games character models, including animations.</h3>
-				<h3 class="display-16 pt-2 fw-normal">Additional to the characters, I created several particle systems, designed the platforming levels, and did some of the asset modeling.</h3>
-				<h3 class="display-16 pt-2 fw-normal">We decided to each give ourselves a challenge with the project, only having 3 months to complete it.</h3>
-				<h3 class="display-16 pt-2 pb-5 fw-normal">I decided to teach myself how to use Blender, learning how to character model, rig, and animate.</h3>
-				<a href="https://troggware.itch.io/bintuwronged" target="_blank" class="btn btn-lg btn-warning">Check out our game!</a>
+				<h3 class="display-16 pt-5 fw-medium">BintuWronged is a retro 3D platformer game made by me and two other classmates for a capstone project in 3 months.</h3>
+				<h3 class="display-16 pt-2 fw-medium">For this project, we decided to each give ourselves a big challenge: create all the code, assets, sound, and music ourselves.</h3>
+				<h2 class="display-16 pt-5 fw-bold">My Contributions:</h2>
+				<ul class="bintu-list">
+					<li class="fs-4 pt-2 fw-normal">BintuWronged/Troggware logo design.</li>
+					<li class="fs-4 pt-2 fw-normal">Character design, modeling, rigging, animating, and sounds.</li>
+					<li class="fs-4 pt-2 fw-normal">Particle systems & glare effects.</li>
+					<li class="fs-4 pt-2 fw-normal">All level/platforming design.</li>
+					<li class="fs-4 pt-2 fw-normal">Additional environment assets.</li>
+					<li class="fs-4 pt-2 fw-normal">Unused character theme songs.</li>
+				</ul>
+				<a href="https://troggware.itch.io/bintuwronged" target="_blank" class="btn btn-lg btn-warning mt-5">Check out our game!</a>
 				<div class="container">
 					<div class="row justify-content-center pt-5 pb-5"> <!--Div containing all the images and title for the portfolio section-->
 						<div class="col-12 col-md-10 col-lg-8">
 							<div class="ratio ratio-16x9">
 								<iframe 
-									src="https://www.youtube.com/embed/E6a0y8_6bkM?si=rO3G3AL8BSB4CrPv" 
+									src="https://www.youtube.com/embed/E6a0y8_6bkM?si=rO3G3AL8BSB4CrPv"
 									title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 									referrerpolicy="strict-origin-when-cross-origin" 
 									allowfullscreen>
@@ -173,45 +194,53 @@
 		<section id="about" class="d-flex flex-column justify-content-center align-items-center pt-5 pb-5 text-center px-3"> <!--About section. Contains 4 images with a circle border with text that goes on the right side in mobile, and alterating sides in tablet or desktop.-->
 			<h2 class="display-2 pt-4 fw-semibold">ABOUT</h2> <!--semibolds font and adds padding to top-->
 			<h3 class="display-6 pt-1 fw-normal">Learn about my journey so far.</h3> <!--sets font normal and pads top-->
-			<div class="containertext-center"> <!--create a container for the content which fits the screen and centers text-->
-				<div class="row row-cols-2 row-cols-md-3 flex-row-reverse flex-md-row py-5"> <!--Div containing the image and text-->
-					<div class="text-start text-md-end"> <!--Div used for the text. puts text at start in mobile and at end in tablet/desktop-->
-						<h4>2003-2011</h4>
-						<h4 class="fw-bold">Art and Technology</h4>
-						<p>I was brought up in a very creative home, drawing and making crafts just about every day. My first introduction to technology was our family computer. My interest sharpened when I saw the possibilities of what I could make.</p>
-					</div>
-					<div class="image-container"> <!--Div used for the image-->
-						<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_watercolour.jpg" alt="water colour painting"> <!--rounds image and allows image to be fluid with a border-->
-					</div>
-				</div>				
-				<div class="d-flex row row-cols-2 row-cols-md-3 flex-row-reverse py-5"> <!--container fits screen and goes reverses and changes depending on size-->
-					<div class="text-start">
-						<h4>2002-2015</h4>
-						<h4 class="fw-bold">Video Games</h4>
-						<p>I soon found interest in playing video games and the second best thing to me was making them. I would spend hours after school experimenting with websites like Scratch and I would start to create levels for flash games and post them online.</p>
-					</div>	
-					<div class="image-container">
-						<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_scratch.jpg" alt="scratch game">  <!--rounds image and allows image to be fluid with a border-->
-					</div>			
-				</div>
-				<div class="d-flex row row-cols-2 row-cols-md-3 flex-row-reverse flex-md-row py-5">	<!--container fits screen and goes reverses and changes depending on size-->
-					<div class="text-start text-md-end">
-						<h4>2016-2020</h4>
-						<h4 class="fw-bold">Combined interests</h4>
-						<p>I had still been drawing and creating things up to this point but I started to discover other ways I could create with technology. I started to try digital drawing and did some classes on photoshop and AutoCAD.</p>
-					</div>
-					<div class="image-container">
-						<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_graphicdesign.jpg" alt="graphic design"> <!--rounds image and allows image to be fluid with a border-->
+			<div class="container text-center"> <!--create a container for the content which fits the screen and centers text-->
+				<div class="timeline-card fade-in-element">
+					<div class="row flex-column flex-md-row-reverse align-items-center py-5"> <!--Div containing the image and text-->
+						<div class="col image-container d-flex justify-content-center justify-content-md-center mb-3 mb-md-0"> <!--Div used for the image-->
+							<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_watercolour.jpg" alt="water colour painting"> <!--rounds image and allows image to be fluid with a border-->
+						</div>
+						<div class="col text-start text-md-end"> <!--Div used for the text. puts text at start in mobile and at end in tablet/desktop-->
+							<h4>2003-2011</h4>
+							<h4 class="fw-bold">Art and Technology</h4>
+							<p>I was brought up in a very creative home, drawing and making crafts just about every day. My first introduction to technology was our family computer. My interest sharpened when I saw the possibilities of what I could make.</p>
+						</div>
 					</div>
 				</div>
-				<div class="d-flex row row-cols-2 row-cols-md-3 flex-row-reverse py-5"> <!--container fits screen and goes reverses and changes depending on size-->
-					<div class="text-start">
-						<h4>2021-Present</h4>
-						<h4 class="fw-bold">Deeper Education</h4>
-						<p>I started to branch out in ways I could express my creativity, making music, editing videos, and programming some simple games. I joined the Arts and Sciences program at Camosun and took classes on Graphic Design and Music Theory and then I went on to complete the IMD Program, deepening my understanding of many concepts and gaining valueable skills along the way.</p>
-					</div>	
-					<div class="image-container">
-						<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_computer.jpg" alt="computer photo"> <!--rounds image and allows image to be fluid with a border-->
+				<div class="timeline-card fade-in-element">	
+					<div class="row flex-column flex-md-row align-items-center py-5"> <!--container fits screen and goes reverses and changes depending on size-->
+						<div class="col image-container d-flex justify-content-center justify-content-md-center mb-3 mb-md-0">
+							<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_scratch.jpg" alt="scratch game">  <!--rounds image and allows image to be fluid with a border-->
+						</div>
+						<div class="col text-start text-md-start">
+							<h4>2002-2015</h4>
+							<h4 class="fw-bold">Video Games</h4>
+							<p>I soon found interest in playing video games and the second best thing to me was making them. I would spend hours after school experimenting with websites like Scratch and I would start to create levels for flash games and post them online.</p>
+						</div>		
+					</div>
+				</div>
+				<div class="timeline-card fade-in-element">
+					<div class="row flex-column flex-md-row-reverse align-items-center py-5">	<!--container fits screen and goes reverses and changes depending on size-->
+						<div class="col image-container d-flex justify-content-center justify-content-md-center mb-3 mb-md-0">
+							<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_graphicdesign.jpg" alt="graphic design"> <!--rounds image and allows image to be fluid with a border-->
+						</div>
+						<div class="col text-start text-md-end">
+							<h4>2016-2020</h4>
+							<h4 class="fw-bold">Combined interests</h4>
+							<p>I had still been drawing and creating things up to this point but I started to discover other ways I could create with technology. I started to try digital drawing and did some classes on photoshop and AutoCAD.</p>
+						</div>
+					</div>
+				</div>
+				<div class="timeline-card fade-in-element">
+					<div class="row flex-column flex-md-row align-items-center py-5"> <!--container fits screen and goes reverses and changes depending on size-->
+						<div class="col image-container d-flex justify-content-center justify-content-md-center mb-3 mb-md-0">
+							<img class="rounded-circle img-fluid border border-secondary-subtle border-5" src="images/com_about_computer.jpg" alt="computer photo"> <!--rounds image and allows image to be fluid with a border-->
+						</div>
+						<div class="col text-start text-md-start">
+							<h4>2021-Present</h4>
+							<h4 class="fw-bold">Deeper Education</h4>
+							<p>I started to branch out in ways I could express my creativity, making music, editing videos, and programming some simple games. I joined the Arts and Sciences program at Camosun and took classes on Graphic Design and Music Theory and then I went on to complete the IMD Program, deepening my understanding of many concepts and gaining valueable skills along the way.</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -358,7 +387,9 @@
 				</div>
 			</div>			
 		</footer>	
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> <!--every thing inside this links allows access to bootstrap library-->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+			
+		</script> <!--every thing inside this links allows access to bootstrap library-->
 	</body>
 </html>
 <!--Web Page Created By: Ian O'Keefe-->
