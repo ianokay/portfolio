@@ -18,7 +18,7 @@ body {
 #portfolio {
 	background-image: 
 		linear-gradient(to bottom, white, rgba(255,255,255,0) 150px),
-		url('../images/naturebackground.jpg');
+		url('../images/naturebackground.JPG');
 	background-size: cover;
 	background-position: center;
 	position: relative;
