@@ -11,7 +11,7 @@ body {
 
 #showcase { /* adds image to background and covers screen */
 	background-image: 
-		linear-gradient(to top, white, rgba(255,255,255,0) 350px),
+		linear-gradient(to top, #F8F3ED, rgba(255,255,255,0) 350px),
 		url('../images/com_bike_mobile.jpg');
 	background-size: cover;
 	background-position: center;
@@ -35,23 +35,28 @@ body {
 	font-size: 10vw;
 }
 
-#portfolio {
-	background-image: 
-		linear-gradient(to bottom, white, rgba(255,255,255,0) 150px),
-		url('../images/naturebackground.jpg');
-	background-size: cover;
-	background-position: center;
-	position: relative;
-	isolation: isolate;
+#skills {
+	background-color: #F8F3ED;
 }
 
-#portfolio::after {
+#portfolio {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#portfolio h2, 
+#portfolio h3 {
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.16);
+}
+
+/* #portfolio::after {
 	content: '';
 	position: absolute;
 	z-index: -1;
 	inset: 0;
-	background: rgba(255,255,255,0.8);
-}
+	background: rgba(255,255,255,0.1);
+} */
 
 .project-card {
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
