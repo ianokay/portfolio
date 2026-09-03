@@ -51,12 +51,31 @@ body {
 	text-shadow: 2px 2px 2px rgba(0,0,0,0.16);
 }
 */
+.project-img-wrapper{
+	display: block;
+    height: 300px;
+    overflow: hidden;
+	position: relative;
+}
+
+.project-img-wrapper::after{
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(165, 165, 165, 0.1);
+	transition: opacity 0.4s ease;
+	pointer-events: none;
+}
 
 .project-img {
-	height: 450px;
+	height: 300px;
 	width: 100%;
 	object-fit: cover;
+	transition: transform 0.3s ease, filter 0.4s ease;
+	transform: scale(1.08);
+	/* filter: grayscale(100%); */
 }
+
 /* #portfolio::after {
 	content: '';
 	position: absolute;
@@ -66,12 +85,53 @@ body {
 } */
 
 .project-card {
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	border: 5px solid rgba(255,255,255,0.15);
+	border-radius: 12px;
+	overflow: hidden;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.project-card .card-title {
+	font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+	color: #666;
+    line-height: 1.5;
 }
 
 .project-card:hover {
-	transform: translateY(-2px) scale(1.02);
+	/*transform: translateY(-2px) scale(1.02);*/
+	transform: translateY(-8px);
 	box-shadow: 0 12px 32px rgba(0,0,0,1);
+}
+
+.project-card:hover .project-img-wrapper::after{
+	opacity: 0;
+}
+
+.project-card:hover .project-img {
+	transform: scale(1);
+	/* filter: grayscale(0%); */
+}
+
+@media (max-width: 767px) {
+    .project-img-wrapper {
+        height: auto;
+    }
+
+    .project-img {
+        height: auto;
+        width: 100%;
+        object-fit: initial;
+        /* filter: grayscale(0%); */
+        transform: scale(1);
+    }
+
+    .project-card .project-img-wrapper::after {
+        opacity: 0;
+    }
 }
 
 #bintuwronged {
@@ -83,6 +143,19 @@ body {
     color: white;
     position: relative;
     z-index: 1;
+}
+
+#bintuwronged::before {
+	content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.78) 0%,
+        rgba(0,0,0,0.55) 55%,
+        rgba(0,0,0,0.15) 100%
+    );
+	z-index: -1;
 }
 
 .bintu-list {
