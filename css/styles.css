@@ -152,8 +152,8 @@ body {
     background: linear-gradient(
         90deg,
         rgba(0,0,0,0.78) 0%,
-        rgba(0,0,0,0.55) 55%,
-        rgba(0,0,0,0.15) 100%
+        rgba(0,0,0,0.55) 40%,
+        rgba(0,0,0,0.15) 80%
     );
 	z-index: -1;
 }
